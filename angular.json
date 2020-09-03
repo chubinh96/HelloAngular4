@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Lesson01-HelloAngular4"
+    }
+  },
+  "defaultProject": "Lesson01-HelloAngular4",
+  "cli": {
+    "analytics": "53e4d1a9-cd1d-4c05-a2b6-2c8c52a6454c"
+  }
 }
