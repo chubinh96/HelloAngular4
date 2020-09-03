@@ -1,3 +1,19 @@
-<hr/>
-<h1>Component of Hello</h1>
-<hr/>
+
+<p>My name is {{name}}</p>
+<p>I'm {{age}} yeal old</p>
+<p>Status : {{ age > 18 ? 'adult':'child'}}</p>
+<p>I'm married is {{isMarried}}</p>
+<img bind-src="imgLink" alt="" [width]="imgWidth">
+<p></p>
+<table border="1" [attr.width] = 300>
+	<tr>
+		<td>id</td>
+		<td>name</td>
+		<td>phone</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>binh</td>
+		<td>234242</td>
+	</tr>
+</table>

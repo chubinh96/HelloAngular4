@@ -1,0 +1,28 @@
+
+
+<div class="radio">
+	<label>
+		<input type="radio" name="rdCheck" checked (click)="onClickCheck(true)">
+		Hợp lệ
+	</label>
+	<label>
+		<input type="radio" name="rdCheck" (click)="onClickCheck(false)">
+		Không hợp lệ
+	</label>
+</div>
+<h3 *ngIf="isChecked; else elseBlock" >Hợp Lệ</h3>
+<ng-template #elseBlock>
+	<h3>Không Hợp Lệ</h3>
+</ng-template>
+
+<div class="form-group">
+	<label for="">Tuổi</label>
+	<input type="text" class="form-control" [(ngModel)]="age">
+</div>
+<ng-template *ngIf="age >= 18; then blockEnough else blockNotEnough"></ng-template>
+<ng-template #blockEnough>
+	<h3>Đủ tuổi</h3>
+</ng-template>
+<ng-template #blockNotEnough>
+	<h3>Không Đủ tuổi</h3>
+</ng-template>
